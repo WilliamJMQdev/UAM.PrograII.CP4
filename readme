@@ -1,0 +1,93 @@
+#Analisis de ventas desde archivo csv
+###Proyecto - Programacion II (Caso Práctico 4)
+
+**Autor** William José Mora Quesada
+**Universidad** UAM
+**Año**  2025
+
+---
+
+## Descripcion del proyecto
+
+Este proyecto consiste en una aplicación desarrollada en Python, utilizando Tkinter, Pandas y Numpy, la cual permite
+
+-Cargar un archivo CSV con información de ventas.
+-Procesar y analizar datos
+-Obtener métricas importantes para la toma de decisiones
+-Mostrar los resultados en una interfaz gráfica amigable
+
+El proyecto cumpo con los requerimientos del Caso de Estudio 4: Analisis de Ventas en una Tienda, solicitado en el curso Programación II
+
+Estructura del Proyecto
+
+Caso 4
+|
+|-src
+| |-caso4.py #Codigo principal del proyecto (GUI + Analisis)
+|
+|-data/
+| |-productos_cr.csv #Dataset de ejemplo (ventas)
+|
+|-docs/
+| |-Caso4.pdf #Documento original del caso de estudio
+|
+|-test/ #Espacio de pruebas
+|
+|-requirements.txt #Librerias necesarias
+|-README.md #Este archivo
+
+##Funciones principales
+Permite seleccionar un archivo .csv a traves de un explorador de archivos
+Se valida que sea un archivo .csv y se muestra su nombre en pantalla
+
+##Transformacion de datos
+El programa realiza
+
+-Lectura con separador ´;´
+-Conversion de fechas
+-Conversion de datos numericos
+-Calculos columna SubTotal
+
+##Analisis estadistico
+Se obtiene
+-Venta total
+-Venta promedio
+-Producto mas vendido
+-Producto menos vendido
+-Dia con mas ventas
+-Dia con menos ventas
+
+#Interfaz grafica Tkinter
+-Los resultados se muestra visualmente en un bloque de texto dentro de la aplicacion
+
+--
+
+###Requerimientos
+Instalar dependencias:
+
+´´´bash
+pip install -r requirements.txt
+
+#Librerias usadas
+pandas
+numpy
+matplotlib
+tkinter
+
+#Ejecucion
+Entrar al directorio
+cd src/
+
+Ejecutar
+python3 caso4.py
+
+En la ventana
+-Presionar "Cargar Archivo CSV"
+-Luego presionar "Analizar Datos"
+
+####Pruebas
+EL proyecto incluye una carpeta test/ para agregar pruebas unitarias futuras
+Las pruebas no son requeridas para el caso de estudio, pero se deja la estructura creada
+
+####Licencia
+Uso educativo para el curso de Programación II - UAM
